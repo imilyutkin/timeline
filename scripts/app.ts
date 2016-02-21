@@ -1,9 +1,9 @@
-class Greeting {
-  constructor() {
+module timeline {
 
-  }
-
-  public sayHello() {
-    console.log("hello, world")
+  export class TimelineApp {
+    constructor() {
+      var timelineApp = angular.module('timeline', [])
+        .controller('startCtrl', ['$scope'], StartCtrl);
+    }
   }
 }
